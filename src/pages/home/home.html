@@ -1,14 +1,14 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Yes or NO
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div text-center class="ctnYes">
+    <h1 [ngStyle]="style">{{ respuesta }}</h1>
+    <button ion-button full color="secondary" outline (click)="yesNo()">Si / No</button>
+  </div>
 </ion-content>
